@@ -6,8 +6,8 @@
 
 
 
-### Set ion as sudoer
-sudo adduser lamp sudo
+### Set ion as sudoer before you run this!
+# sudo adduser lamp sudo
 
 
 
@@ -29,7 +29,7 @@ sudo apt install -y mariadb-server mariadb-client
 apt policy mariadb-server
 systemctl status mariadb
 
-# Set root password as ion
+# Set root password as lamp
 sudo mysql_secure_installation
 
 
@@ -43,7 +43,7 @@ sudo systemctl enable apache2
 
 
 ### Install php modules
-sudo apt install php libapache2-mod-php php-cli php-fpm php-json php-pdo php-mysql php-zip php-gd  php-mbstring php-curl php-xml php-pear php-bcmath
+sudo apt install -y php libapache2-mod-php php-cli php-fpm php-json php-pdo php-mysql php-zip php-gd  php-mbstring php-curl php-xml php-pear php-bcmath
 
 # Enable php for apache2
 sudo a2enmod php7.3 
