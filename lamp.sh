@@ -7,7 +7,7 @@
 
 
 ### Set ion as sudoer
-sudo adduser ion sudo
+sudo adduser lamp sudo
 
 
 
