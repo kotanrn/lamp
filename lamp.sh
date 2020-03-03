@@ -9,6 +9,12 @@
 ### Set ion as sudoer before you run this!
 # sudo adduser lamp sudo
 
+### While still logged in as root, Show VM's ip address at login prompt
+# sudo echo " " >> /etc/issue
+# sudo echo " " >> /etc/issue
+# sudo echo "IP Address: \4 " >> /etc/issue
+
+
 
 
 ### Fully update the system first
@@ -55,13 +61,6 @@ echo "<?php phpinfo(); ?>" | sudo tee /var/www/html/phpinfo.php
 
 
 
-### Show VM's ip address at login prompt
-sudo echo " " >> /etc/issue
-sudo echo " " >> /etc/issue
-sudo echo "IP Address: \4 " >> /etc/issue
-
-
-
 
 ### Add some aliases
 echo " " >> ~/.bashrc
@@ -78,5 +77,6 @@ echo "alias me='clear; ip -4 -br a | grep -v -E lo'" >> ~/.bashrc
 ### http://192.168.1.249/phpinfo.php
 
 
-### Access CLI interface for mariadb
-mysql -u root -p
+
+### Install python modules
+pip install kubernetes pprint json pymysql
